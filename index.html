@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Planning & Development CSS Tempalate</title>
+</head>
+<body>
+    <style>
+        :root{
+            --header-clr : #e17055;
+            --bg-color:#ffff;
+            --box-sha : 8px 8px 5px #2d3436;
+        }
+        body{
+            padding:4rem;
+            font-family: 'Roboto Mono', monospace;
+        }
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .header{
+          background:var(--bg-color);
+          box-shadow:var(--box-sha);
+          
+    
+        }
+        .main{
+            background:var(--bg-color);
+            box-shadow:var(--box-sha);
+          
+
+
+ 
+        }
+        .content{
+
+            background:var(--bg-color);
+            box-shadow:var(--box-sha);
+           
+
+ 
+        }
+
+        .container{
+             column-count:2;
+        }
+        .container:hover{
+            opacity:0.7;
+        }
+         
+         .container h1,h2,h3{
+             padding:0.5rem;
+             font-size:2rem;  
+             color:var(--header-clr);
+
+         }
+          
+         
+         
+          .container p{
+              padding:0.5rem;
+              line-height:1.5rem;
+           }
+
+           @media(max-width:768px){
+               .container{
+                   display: grid;
+                   grid-template-columns: 1fr;
+                   justify-content: center;
+                   padding-left:3rem;
+                   margin-top:-3.7rem;
+                   margin-left:6.5rem;
+               }
+           }
+        
+        
+          
+
+    </style>
+                      <div class = "container">
+
+         <div class = "pic">
+            <img src = "1.jpg" alt="">
+  
+         <div class = "header">
+        <h1>Planning</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, facilis sit quo ipsum reprehenderit blanditiis optio voluptatibus atque ullam rem.</p>
+        </div><br>
+        <div class = "main">
+        <h2>Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut quibusdam reiciendis eligendi cumque placeat dignissimos minima vitae, voluptatum accusantium.</p>
+        </div><br>
+        <div class = "content">
+        <h3>Consulting</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id obcaecati veniam architecto dicta nisi facere tempora, expedita fugiat labore.</p>
+        </div>
+        </div>
+      
+</body>
+</html>
